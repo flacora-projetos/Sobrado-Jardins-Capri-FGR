@@ -26,15 +26,15 @@ export function Presentation() {
           
           <div className="order-1 lg:order-2 max-w-xl">
             <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight mb-8 text-brand-dark">
-              Mais do que uma casa, uma escolha de estilo de vida
+              Pronto para morar: o alto padrão que sua família merece
             </h2>
             
             <div className="space-y-6 text-brand-text-muted text-lg font-light leading-relaxed">
               <p>
-                Este sobrado no Jardins Capri FGR entrega o que o comprador de alto padrão procura: ambientes bem distribuídos, acabamento de primeira linha, lazer privativo e uma experiência de moradia que combina conforto, elegância e funcionalidade.
+                Este sobrado recém-construído no Jardins Capri FGR entrega exatamente o que você procura: <strong>4 suítes plenas</strong>, ambientes integrados, acabamento premium e uma área de lazer privativa completa para receber amigos e família.
               </p>
               <p>
-                Tudo isso em uma localização estratégica dentro do condomínio, com vista privilegiada e forte potencial de valorização.
+                Localizado estrategicamente <strong>em frente à praça</strong> do condomínio, você garante não apenas uma vista definitiva e mais privacidade, mas também um imóvel com altíssimo potencial de valorização.
               </p>
             </div>
           </div>

@@ -13,11 +13,11 @@ export function FinalCTA() {
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-8">
-            Agende seu atendimento e conheça de perto este sobrado no Jardins Capri FGR
+            Seu novo sobrado de alto padrão no Jardins Capri FGR está pronto para morar
           </h2>
           
           <p className="text-xl text-white/80 font-light mb-12 max-w-2xl mx-auto leading-relaxed">
-            Se você procura uma casa nova, sofisticada, bem localizada e pronta para morar, esta pode ser a oportunidade certa. Entre em contato agora e receba atendimento direto.
+            Não deixe essa oportunidade passar. Imóveis novos, com 4 suítes e lazer privativo nesta localização são altamente disputados. Fale com um especialista agora mesmo.
           </p>
           
           <div className="flex flex-col sm:flex-row justify-center gap-6">

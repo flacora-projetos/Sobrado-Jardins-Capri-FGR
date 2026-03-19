@@ -4,28 +4,24 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "O imóvel está pronto para morar?",
-    answer: "Sim. O imóvel é novo e está pronto para morar.",
+    question: "O imóvel já está pronto para morar?",
+    answer: "Sim! É uma casa 100% nova, recém-construída e pronta para você se mudar imediatamente com sua família.",
   },
   {
-    question: "Quantas suítes a casa possui?",
-    answer: "A casa conta com 4 suítes, oferecendo conforto e privacidade para a família.",
+    question: "Como funciona a negociação e pagamento?",
+    answer: "O imóvel aceita financiamento bancário, uso de FGTS e estudamos permuta como parte do pagamento. Temos flexibilidade para ouvir sua proposta.",
   },
   {
-    question: "Quais são os principais diferenciais?",
-    answer: "Entre os destaques estão a localização em frente à praça, a vista privilegiada, a piscina, a área gourmet, a automação, a energia solar e o acabamento de primeira linha.",
+    question: "Quais os diferenciais da localização dentro do condomínio?",
+    answer: "O sobrado está em uma posição premium: em frente à praça. Isso garante uma vista definitiva, maior privacidade (sem vizinho de frente) e mais facilidade para o lazer das crianças.",
   },
   {
-    question: "Aceita financiamento ou permuta?",
-    answer: "Sim. Há possibilidade de financiamento, uso de FGTS, permuta, negociação e parcelamento.",
+    question: "A casa já possui automação e energia solar?",
+    answer: "Sim, o imóvel já conta com infraestrutura de automação residencial e sistema de energia solar, garantindo modernidade, conforto e economia desde o primeiro dia.",
   },
   {
-    question: "Como posso agendar atendimento?",
-    answer: "Basta clicar no botão de WhatsApp ou usar a opção de ligação disponível na página.",
-  },
-  {
-    question: "Qual o horário de atendimento?",
-    answer: "O atendimento está disponível 24 horas.",
+    question: "Como faço para visitar o imóvel?",
+    answer: "Basta clicar em qualquer botão de WhatsApp nesta página. Nosso atendimento é imediato e podemos agendar sua visita presencial para hoje mesmo ou para o melhor dia da sua agenda.",
   },
 ];
 

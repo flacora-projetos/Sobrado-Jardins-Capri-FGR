@@ -1,14 +1,14 @@
 import { CheckCircle2 } from "lucide-react";
 
 const differentials = [
-  "Localização estratégica no condomínio, em frente à praça",
-  "Vista agradável e sensação de amplitude",
-  "4 suítes para mais conforto e privacidade",
-  "Piscina e área gourmet para viver e receber bem",
-  "Acabamento de primeira linha",
-  "Ambientes planejados para funcionalidade e sofisticação",
-  "Energia solar e automação para mais eficiência e conveniência",
-  "Armários planejados, closet, varanda e jardim",
+  "Localização premium: em frente à praça, sem vizinho de frente",
+  "Vista definitiva com sensação de amplitude e privacidade",
+  "4 suítes plenas, garantindo conforto total para a família",
+  "Lazer privativo completo com piscina e área gourmet integrada",
+  "Acabamento de altíssimo padrão em todos os ambientes",
+  "Projeto inteligente unindo sofisticação e funcionalidade",
+  "Infraestrutura pronta de automação e energia solar",
+  "Casa nova, recém-construída e pronta para morar",
 ];
 
 export function Differentials() {

@@ -1,9 +1,9 @@
 const specs = [
-  { label: "Valor", value: "R$ 1.850.000,00", highlight: true },
-  { label: "Terreno", value: "353 m²" },
-  { label: "Construção", value: "267 m²" },
+  { label: "Valor do Imóvel", value: "R$ 1.950.000,00", highlight: true },
+  { label: "Área do Terreno", value: "353 m²" },
+  { label: "Área Construída", value: "267 m²" },
   { label: "Quartos", value: "4" },
-  { label: "Suítes", value: "4" },
+  { label: "Suítes Plenas", value: "4" },
   { label: "Banheiros", value: "5" },
   { label: "Vagas Cobertas", value: "3" },
   { label: "Vagas Descobertas", value: "3" },
@@ -15,14 +15,14 @@ const specs = [
 const conditions = [
   "Aceita financiamento",
   "Aceita FGTS",
-  "Aceita permuta",
+  "Estuda permuta",
   "Possibilidade de negociação",
-  "Possibilidade de parcelamento",
+  "Documentação regularizada",
 ];
 
 export function TechnicalSheet() {
   return (
-    <section className="py-24 bg-white border-y border-brand-gray">
+    <section className="py-24 bg-brand-light border-y border-brand-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
@@ -34,17 +34,17 @@ export function TechnicalSheet() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
             <div className="md:col-span-2">
-              <div className="bg-brand-light rounded-2xl p-8 md:p-10">
-                <h3 className="text-xl font-serif font-medium text-brand-dark mb-8 border-b border-brand-gray pb-4">
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-brand-gray/50">
+                <h3 className="text-2xl font-serif font-medium text-brand-dark mb-8 border-b border-brand-gray pb-4">
                   Ficha Técnica
                 </h3>
                 <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6">
                   {specs.map((spec, idx) => (
-                    <div key={idx} className="flex flex-col border-b border-brand-gray/50 pb-3">
-                      <dt className="text-sm text-brand-text-muted uppercase tracking-wider mb-1">{spec.label}</dt>
-                      <dd className={`text-lg font-medium ${spec.highlight ? 'text-brand-gold-dark text-2xl' : 'text-brand-dark'}`}>
+                    <div key={idx} className={`flex flex-col border-b border-brand-gray/50 pb-3 ${spec.highlight ? 'sm:col-span-2 bg-brand-light/50 p-4 rounded-lg border-none' : ''}`}>
+                      <dt className={`text-sm uppercase tracking-wider mb-1 ${spec.highlight ? 'text-brand-dark font-semibold' : 'text-brand-text-muted'}`}>{spec.label}</dt>
+                      <dd className={`font-medium ${spec.highlight ? 'text-brand-gold-dark text-3xl md:text-4xl' : 'text-brand-dark text-lg'}`}>
                         {spec.value}
                       </dd>
                     </div>
@@ -54,13 +54,13 @@ export function TechnicalSheet() {
             </div>
 
             <div className="md:col-span-1">
-              <div className="bg-brand-dark text-white rounded-2xl p-8 md:p-10 h-full">
-                <h3 className="text-xl font-serif font-medium mb-8 border-b border-white/20 pb-4">
-                  Condições de Venda
+              <div className="bg-brand-dark text-white rounded-2xl p-8 md:p-10 h-full shadow-lg">
+                <h3 className="text-2xl font-serif font-medium mb-8 border-b border-white/20 pb-4">
+                  Condições
                 </h3>
                 <ul className="space-y-6">
                   {conditions.map((condition, idx) => (
-                    <li key={idx} className="flex items-center text-white/90 font-light">
+                    <li key={idx} className="flex items-center text-white/90 font-light text-lg">
                       <span className="w-2 h-2 rounded-full bg-brand-gold mr-4 shrink-0" />
                       {condition}
                     </li>

@@ -9,8 +9,8 @@ export function Footer() {
             <p className="text-sm font-light">
               &copy; {new Date().getFullYear()} Jardins Capri FGR. Todos os direitos reservados.
             </p>
-            <p className="text-xs mt-2 opacity-50">
-              As imagens e informações desta página são de caráter ilustrativo e informativo.
+            <p className="text-xs mt-2 opacity-70">
+              As imagens apresentadas são reais e correspondem exatamente ao imóvel anunciado.
             </p>
           </div>
           
@@ -22,6 +22,17 @@ export function Footer() {
               Ligar: {CONTACT.displayPhone}
             </a>
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <a 
+            href="https://wa.me/556299465725" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-[10px] opacity-30 hover:opacity-100 transition-opacity uppercase tracking-widest"
+          >
+            Desenvolvido por Flávio Corá
+          </a>
         </div>
       </div>
     </footer>
