@@ -4,6 +4,7 @@ export const IMAGES = {
   cozinha: 'https://lh3.googleusercontent.com/d/1F3ckaeGAG6rRzBA3qiPEONs2wu59ORDU',
   quarto: 'https://lh3.googleusercontent.com/d/1cphpziwRN2jbpxhHHykTFEvzGPQYvy6r',
   escada: 'https://lh3.googleusercontent.com/d/18Im7T1pxWu-POQzXD6GCtGFiOKEAVEkQ',
+  entrada: 'https://lh3.googleusercontent.com/d/1xM0lRvFN-2lKQgj77bsRfeOihx-ORl4r',
 };
 
 export const CONTACT = {

@@ -5,7 +5,7 @@ export function Gallery() {
     { src: IMAGES.fachada, alt: "Fachada imponente", className: "md:col-span-2 md:row-span-2" },
     { src: IMAGES.piscina, alt: "Piscina e área gourmet", className: "md:col-span-1 md:row-span-1" },
     { src: IMAGES.cozinha, alt: "Cozinha integrada", className: "md:col-span-1 md:row-span-1" },
-    { src: IMAGES.escada, alt: "Acabamento da escada", className: "md:col-span-1 md:row-span-1" },
+    { src: IMAGES.entrada, alt: "Visão da entrada", className: "md:col-span-1 md:row-span-1" },
     { src: IMAGES.quarto, alt: "Suíte master", className: "md:col-span-1 md:row-span-1" },
   ];
 
