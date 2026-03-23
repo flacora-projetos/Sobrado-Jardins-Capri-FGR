@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "motion/react";
 
 const faqs = [
   {
@@ -36,19 +37,29 @@ export function FAQ() {
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl md:text-4xl font-serif font-medium text-brand-dark mb-4">
               Perguntas Frequentes
             </h2>
             <p className="text-brand-text-muted text-lg font-light">
               Tire suas dúvidas sobre o imóvel e as condições de negociação.
             </p>
-          </div>
+          </motion.div>
 
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div
+              <motion.div
                 key={index}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
                 className="border border-brand-gray rounded-2xl overflow-hidden transition-colors hover:border-brand-gold/50"
               >
                 <button
@@ -73,7 +84,7 @@ export function FAQ() {
                     {faq.answer}
                   </p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

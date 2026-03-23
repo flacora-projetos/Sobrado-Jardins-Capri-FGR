@@ -1,11 +1,18 @@
 import { IMAGES } from "@/constants";
+import { motion } from "motion/react";
 
 export function Presentation() {
   return (
     <section className="py-24 bg-brand-light">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="order-2 lg:order-1 relative">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="order-2 lg:order-1 relative"
+          >
             <div className="aspect-[4/5] overflow-hidden rounded-2xl">
               <img
                 src={IMAGES.escada}
@@ -22,9 +29,15 @@ export function Presentation() {
                 referrerPolicy="no-referrer"
               />
             </div>
-          </div>
+          </motion.div>
           
-          <div className="order-1 lg:order-2 max-w-xl">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="order-1 lg:order-2 max-w-xl"
+          >
             <h2 className="text-3xl md:text-4xl font-serif font-medium leading-tight mb-8 text-brand-dark">
               Pronto para morar: o alto padrão que sua família merece
             </h2>
@@ -37,7 +50,7 @@ export function Presentation() {
                 Localizado estrategicamente <strong>em frente à praça</strong> do condomínio, você garante não apenas uma vista definitiva e mais privacidade, mas também um imóvel com altíssimo potencial de valorização.
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

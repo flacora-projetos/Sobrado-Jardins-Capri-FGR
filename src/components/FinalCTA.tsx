@@ -1,6 +1,7 @@
 import { CONTACT } from "@/constants";
 import { Button } from "./ui/Button";
 import { Phone, MessageCircle } from "lucide-react";
+import { motion } from "motion/react";
 
 export function FinalCTA() {
   return (
@@ -11,7 +12,13 @@ export function FinalCTA() {
       </div>
 
       <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto text-center"
+        >
           <h2 className="text-4xl md:text-5xl font-serif font-medium leading-tight mb-8">
             Seu novo sobrado de alto padrão no Jardins Capri FGR está pronto para morar
           </h2>
@@ -38,7 +45,7 @@ export function FinalCTA() {
           <p className="mt-8 text-sm text-white/50 uppercase tracking-widest">
             Atendimento 24 horas
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

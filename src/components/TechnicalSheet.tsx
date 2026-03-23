@@ -1,3 +1,5 @@
+import { motion } from "motion/react";
+
 const specs = [
   { label: "Valor do Imóvel", value: "R$ 1.950.000,00", highlight: true },
   { label: "Área do Terreno", value: "353 m²" },
@@ -25,17 +27,29 @@ export function TechnicalSheet() {
     <section className="py-24 bg-brand-light border-y border-brand-gray">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-16">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
             <h2 className="text-3xl md:text-4xl font-serif font-medium text-brand-dark mb-4">
               Informações do imóvel
             </h2>
             <p className="text-brand-text-muted text-lg font-light">
               Ficha técnica completa e condições de negociação.
             </p>
-          </div>
+          </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-            <div className="md:col-span-2">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="md:col-span-2"
+            >
               <div className="bg-white rounded-2xl p-8 md:p-10 shadow-sm border border-brand-gray/50">
                 <h3 className="text-2xl font-serif font-medium text-brand-dark mb-8 border-b border-brand-gray pb-4">
                   Ficha Técnica
@@ -51,9 +65,15 @@ export function TechnicalSheet() {
                   ))}
                 </dl>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="md:col-span-1">
+            <motion.div 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="md:col-span-1"
+            >
               <div className="bg-brand-dark text-white rounded-2xl p-8 md:p-10 h-full shadow-lg">
                 <h3 className="text-2xl font-serif font-medium mb-8 border-b border-white/20 pb-4">
                   Condições
@@ -67,7 +87,7 @@ export function TechnicalSheet() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

@@ -1,12 +1,19 @@
 import { CONTACT } from "@/constants";
 import { Button } from "./ui/Button";
 import { Phone, MessageCircle } from "lucide-react";
+import { motion } from "motion/react";
 
 export function IntermediateCTA() {
   return (
     <section className="py-20 bg-brand-gold-dark text-white text-center">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="max-w-3xl mx-auto"
+        >
           <h2 className="text-3xl md:text-4xl font-serif font-medium mb-6">
             Agende uma visita e conheça este imóvel de perto
           </h2>
@@ -28,7 +35,7 @@ export function IntermediateCTA() {
               </a>
             </Button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

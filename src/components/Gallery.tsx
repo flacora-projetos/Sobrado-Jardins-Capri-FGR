@@ -1,4 +1,5 @@
 import { IMAGES } from "@/constants";
+import { motion } from "motion/react";
 
 export function Gallery() {
   const images = [
@@ -12,18 +13,31 @@ export function Gallery() {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center max-w-2xl mx-auto mb-16"
+        >
           <h2 className="text-3xl md:text-4xl font-serif font-medium text-brand-dark mb-4">
             Galeria do Imóvel
           </h2>
           <p className="text-brand-text-muted text-lg font-light">
             Conheça os detalhes que fazem deste sobrado uma oportunidade única.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-4 h-[800px] md:h-[600px]">
           {images.map((img, idx) => (
-            <div key={idx} className={`relative overflow-hidden group rounded-xl ${img.className}`}>
+            <motion.div 
+              key={idx} 
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              className={`relative overflow-hidden group rounded-xl ${img.className}`}
+            >
               <img
                 src={img.src}
                 alt={img.alt}
@@ -35,7 +49,7 @@ export function Gallery() {
                   {img.alt}
                 </span>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
