@@ -19,6 +19,8 @@ const carouselImages = [
   { src: "https://lh3.googleusercontent.com/d/1ykneTRP9-fNOTRZQAB3HibKIoGNnOf2-", alt: "Ambiente do imóvel 14" },
   { src: "https://lh3.googleusercontent.com/d/1VBv4iYOaozvy_wLvaEF6F8zPlwENJPG6", alt: "Ambiente do imóvel 15" },
   { src: "https://lh3.googleusercontent.com/d/1J1-1WrL2iChUHcI3tggdCj54hfbmaKQa", alt: "Ambiente do imóvel 16" },
+  { src: "https://lh3.googleusercontent.com/d/1hjNDuDTAN42ZHZvJQLPRlcI5XB2qRbgm", alt: "Ambiente do imóvel 17" },
+  { src: "https://lh3.googleusercontent.com/d/19QZsC62tN7F2mHZoHg_LpMyvtjNtpnTX", alt: "Ambiente do imóvel 18" },
 ];
 
 export function CarouselGallery() {
