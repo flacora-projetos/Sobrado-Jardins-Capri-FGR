@@ -7,6 +7,7 @@ import { Hero } from "@/components/Hero";
 import { QuickHighlights } from "@/components/QuickHighlights";
 import { Presentation } from "@/components/Presentation";
 import { Gallery } from "@/components/Gallery";
+import { CarouselGallery } from "@/components/CarouselGallery";
 import { Differentials } from "@/components/Differentials";
 import { Lifestyle } from "@/components/Lifestyle";
 import { TechnicalSheet } from "@/components/TechnicalSheet";
@@ -24,6 +25,7 @@ export default function App() {
       <QuickHighlights />
       <Presentation />
       <Gallery />
+      <CarouselGallery />
       <Differentials />
       <Lifestyle />
       <TechnicalSheet />
