@@ -77,7 +77,7 @@ export function CarouselGallery() {
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: Math.min(idx * 0.05, 0.5) }}
                 onClick={() => setSelectedIndex(idx)}
-                className="min-w-[85vw] sm:min-w-[320px] md:min-w-[350px] aspect-[3/4] snap-center sm:snap-start relative rounded-2xl overflow-hidden shrink-0 group shadow-xl bg-black/20 cursor-pointer"
+                className="w-[200px] sm:w-[240px] md:w-[280px] aspect-[3/4] snap-center sm:snap-start relative rounded-2xl overflow-hidden shrink-0 group shadow-xl bg-black/20 cursor-pointer"
               >
                 <img
                   src={img.src}
@@ -85,11 +85,6 @@ export function CarouselGallery() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <span className="text-white font-medium text-lg tracking-wide drop-shadow-md">
-                    {img.alt}
-                  </span>
-                </div>
               </motion.div>
             ))}
           </div>
@@ -159,18 +154,15 @@ export function CarouselGallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative w-full max-w-6xl max-h-[90vh] px-4 md:px-20 flex flex-col items-center justify-center"
+              className="relative w-full h-full p-4 md:p-12 flex flex-col items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <img 
                 src={carouselImages[selectedIndex].src} 
                 alt={carouselImages[selectedIndex].alt}
-                className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+                className="w-full h-full object-contain drop-shadow-2xl"
                 referrerPolicy="no-referrer"
               />
-              <p className="text-white/90 text-lg md:text-xl mt-6 font-light tracking-wide text-center">
-                {carouselImages[selectedIndex].alt}
-              </p>
             </motion.div>
           </motion.div>
         )}
