@@ -42,13 +42,13 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white border-none shadow-lg shadow-[#25D366]/20">
-              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer">
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')}>
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Falar no WhatsApp
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-brand-dark backdrop-blur-sm">
-              <a href={CONTACT.phone}>
+              <a href={CONTACT.phone} onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')}>
                 <Phone className="mr-2 h-5 w-5" />
                 Ligar agora
               </a>

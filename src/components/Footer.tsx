@@ -15,10 +15,10 @@ export function Footer() {
           </div>
           
           <div className="flex items-center gap-6 text-sm">
-            <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
+            <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')} className="hover:text-white transition-colors">
               WhatsApp
             </a>
-            <a href={CONTACT.phone} className="hover:text-white transition-colors">
+            <a href={CONTACT.phone} onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')} className="hover:text-white transition-colors">
               Ligar: {CONTACT.displayPhone}
             </a>
           </div>

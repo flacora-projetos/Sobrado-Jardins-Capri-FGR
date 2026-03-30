@@ -29,13 +29,13 @@ export function FinalCTA() {
           
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             <Button asChild size="lg" className="bg-[#25D366] hover:bg-[#128C7E] text-white border-none h-14 px-10 text-lg shadow-lg shadow-[#25D366]/20">
-              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer">
+              <a href={CONTACT.whatsapp} target="_blank" rel="noopener noreferrer" onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')}>
                 <MessageCircle className="mr-3 h-6 w-6" />
                 Quero falar no WhatsApp
               </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-white/30 text-white hover:bg-white hover:text-brand-dark h-14 px-10 text-lg">
-              <a href={CONTACT.phone}>
+              <a href={CONTACT.phone} onClick={() => (window as any).fbq && (window as any).fbq('track', 'Lead')}>
                 <Phone className="mr-3 h-6 w-6" />
                 Quero ligar agora
               </a>
