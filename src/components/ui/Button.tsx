@@ -22,10 +22,15 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     );
 
     if (asChild && React.isValidElement(children)) {
+      const childProps = children.props as any;
       return React.cloneElement(children, {
-        className: cn(classes, children.props.className),
+        className: cn(classes, childProps.className),
         ref: ref as any,
-        ...props
+        ...props,
+        onClick: (e: any) => {
+          if (childProps.onClick) childProps.onClick(e);
+          if (props.onClick) props.onClick(e);
+        }
       } as any);
     }
 
