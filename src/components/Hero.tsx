@@ -38,7 +38,7 @@ export function Hero() {
           
           <div className="mb-10">
             <p className="text-sm text-white/70 uppercase tracking-wider mb-1">Valor do Imóvel</p>
-            <p className="text-3xl md:text-4xl font-medium text-white">R$ 1.950.000</p>
+            <p className="text-3xl md:text-4xl font-medium text-white">R$ 1.850.000</p>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4">

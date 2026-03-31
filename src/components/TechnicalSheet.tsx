@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 
 const specs = [
-  { label: "Valor do Imóvel", value: "R$ 1.950.000,00", highlight: true },
+  { label: "Valor do Imóvel", value: "R$ 1.850.000,00", highlight: true },
   { label: "Área do Terreno", value: "353 m²" },
   { label: "Área Construída", value: "267 m²" },
   { label: "Quartos", value: "4" },
