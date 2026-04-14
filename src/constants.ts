@@ -8,7 +8,7 @@ export const IMAGES = {
 };
 
 export const CONTACT = {
-  whatsapp: 'https://wa.me/5562982401515?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20sobrado%20no%20Jardins%20Capri%20FGR.',
+  whatsapp: 'https://wa.me/5562982401515?text=Ol%C3%A1%21%20Vim%20atrav%C3%A9s%20do%20site%20e%20tenho%20interesse%20no%20sobrado%20de%20R%24%201.850.000%20no%20Jardins%20Capri.%20Pode%20me%20passar%20mais%20informa%C3%A7%C3%B5es%3F',
   phone: 'tel:+5562982401515',
   displayPhone: '(62) 98240-1515',
 };
